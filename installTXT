@@ -21,3 +21,27 @@ curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
 如果您使用的是Windows 10，则可以使用PowerShell安装发行版。只需导航到包含从上面下载的发行版的文件夹，然后在该目录中运行以下命令，其中app_name是发行版.appx文件的名称。
 
 Add-AppxPackage .\app_name.appx
+
+
+启动Linux子系统
+按下 Windows 键 输入 Ubuntu 单机打开，设置用户名和密码
+
+
+-- 
+我安装 Linux 第一件事就是查看内核版本以及系统系统版本，在 Ubuntu 下直接输入以下命令来查看内核版本号：
+
+uname -r
+
+这时系统会显示：4.4.0-43-Microsoft，这表示Linux 内核版本为：4.4.0-43。
+
+至于系统版本号，可以使用：sudo lsb_release -a 来查看
+
+更换 Linux 子系统的软件源并更新软件
+
+
+sudo -i
+
+https://sspai.com/post/43813
+apt-get update
+
+
