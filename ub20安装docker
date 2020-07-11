@@ -1,0 +1,9 @@
+vim /etc/apt/sources.list
+增加这条: deb [arch=amd64] https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/ubuntu  bionic stable
+
+保存退出后更新apt 源：apt-get update
+查看docker-ce这个安装包：apt search docker-ce
+
+sudo apt-get install docker
+ apt install docker.io  
+ docker version
