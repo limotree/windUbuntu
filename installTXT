@@ -1,0 +1,23 @@
+启用 Windows Subsystem for Linux，并安装发行版本
+
+“管理员:Windows Powershell”命令窗口打开后，复制并粘贴下面的脚本，以启用 WSL 功能：
+
+PowerShell
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+
+使用PowerShell下载
+要使用PowerShell下载发行版，请使用Invoke-WebRequest cmdlet。这是下载Ubuntu 16.04的示例说明。
+Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing
+
+
+用curl下载
+Windows 10 Spring 2018 Update（或更高版本）包括流行的curl命令行实用程序，您可以使用该实用程序从命令行调用Web请求（即HTTP GET，POST，PUT等命令）。您可以curl.exe用来下载上述发行版：
+curl.exe -L -o ubuntu-1604.appx https://aka.ms/wsl-ubuntu-1604
+
+
+安装发行版
+如果您使用的是Windows 10，则可以使用PowerShell安装发行版。只需导航到包含从上面下载的发行版的文件夹，然后在该目录中运行以下命令，其中app_name是发行版.appx文件的名称。
+
+Add-AppxPackage .\app_name.appx
