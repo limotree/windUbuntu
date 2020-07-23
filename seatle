@@ -1,0 +1,12 @@
+Ko/cdF2pTkRpnTaEXdpkTqTHtpDDtQR9y0jGKIKpHS4=
+
+[Interface]
+PrivateKey = SKYGH0pt3g4iSndzEyL0jcr4eqXPGVl6ZfwsBljYAnc=
+Address = 10.88.88.2/24
+DNS = 1.1.1.1, 8.8.8.8
+
+[Peer]
+PublicKey = lm4bxwVe5abKr+sdxUdH504iMpMMvdsdmaZs/VpSVz8=
+PresharedKey = c4WwriCrej1jXEwGXkzmOLF6QNEg88N73jYmDlzEhH0=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 104.168.147.10
